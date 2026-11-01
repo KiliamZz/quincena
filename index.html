@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>¿Pa' dónde se fue la quincena? · El libro de finanzas para colombianos</title>
-<meta name="description" content="Cómo hacer que la plata te alcance, salir de deudas y empezar a ahorrar con lo que ganas hoy. Libro en PDF con cuentas hechas con el mínimo de 2026. Lee el capítulo 1 gratis.">
+<meta name="description" content="Cómo hacer que la plata te alcance, salir de deudas y empezar a ahorrar con lo que ganas hoy. Libro en PDF con cuentas hechas con el mínimo de 2026.">
 <meta property="og:title" content="¿Pa' dónde se fue la quincena?">
-<meta property="og:description" content="El libro de finanzas sin enredos para colombianos. Lee el capítulo 1 gratis.">
+<meta property="og:description" content="El libro de finanzas sin enredos para colombianos. Descarga inmediata.">
 <meta property="og:image" content="https://kiliamzz.github.io/quincena/img/compartir.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#FFC93C">
@@ -29,7 +29,6 @@
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 58px; padding: 0 30px; border-radius: 999px; font-weight: 800; font-size: 18px; text-decoration: none; cursor: pointer; border: 0; }
   .btn.comprar { background: var(--marino); color: var(--amarillo); box-shadow: 0 6px 0 #0D1330; }
   .btn.comprar:active { transform: translateY(3px); box-shadow: 0 3px 0 #0D1330; }
-  .btn.gratis { background: #fff; color: var(--marino); box-shadow: inset 0 0 0 2px var(--marino); }
 
   /* Portada */
   .hero { background: var(--amarillo); position: relative; overflow: hidden; }
@@ -76,10 +75,9 @@
   .galeria figcaption { font-size: 14px; font-weight: 700; color: var(--marino); margin-top: 10px; }
   .desliza { font-size: 14px; font-weight: 700; color: var(--suave); }
 
-  /* Muestra gratis */
-  .muestra { background: var(--amarillo-suave); border: 3px dashed var(--amarillo); border-radius: 26px; padding: 30px; display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center; }
-  .muestra img { width: 150px; border-radius: 6px 10px 10px 6px; box-shadow: 14px 18px 30px rgba(0,0,0,.2); transform: rotate(-4deg); }
-  .muestra h2 { font-size: clamp(26px, 5vw, 34px); }
+  /* Enlace discreto a la muestra */
+  .mini { margin-top: 18px; font-size: 13px; color: #D4DBF5; }
+  .mini a { color: inherit; }
 
   /* Para quién */
   .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
@@ -122,8 +120,6 @@
     .libro { width: 46%; }
     .acciones .btn { flex: 1 1 100%; }
     .dolores, .lista, .dos, .indice { grid-template-columns: 1fr; }
-    .muestra { grid-template-columns: 1fr; text-align: center; }
-    .muestra img { margin: 0 auto; }
     .dato { flex-direction: column; text-align: center; }
     section.bloque { padding: 48px 0; }
   }
@@ -149,7 +145,6 @@ fbq('track', 'ViewContent', { content_name: 'Libro quincena', value: 19900, curr
       <div class="precio"><b>$19.900</b><s>$29.900</s><small>Precio de lanzamiento</small></div>
       <div class="acciones">
         <a class="btn comprar" data-comprar href="https://checkout.wompi.co/l/47ppAK">Comprar el libro</a>
-        <a class="btn gratis" href="#gratis">Leer el capítulo 1 gratis</a>
       </div>
       <p class="confianza">🔒 Pago seguro con Wompi · 📩 Te llega al instante y a tu correo · 📱 PDF para leer en el celular</p>
     </div>
@@ -198,19 +193,6 @@ fbq('track', 'ViewContent', { content_name: 'Libro quincena', value: 19900, curr
       <figure><img src="img/pag-cajas.jpg" alt="Cajas de colores del libro" loading="lazy"><figcaption>Cajas para ir directo al grano</figcaption></figure>
       <figure><img src="img/pag-plantilla.jpg" alt="Plantilla de presupuesto" loading="lazy"><figcaption>Plantillas para llenar</figcaption></figure>
       <figure><img src="img/pag-plan.jpg" alt="Plan de 30 días" loading="lazy"><figcaption>Un plan de 30 días</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section class="bloque blanco" id="gratis">
-  <div class="wrap">
-    <div class="muestra">
-      <img src="img/portada.jpg" alt="" loading="lazy">
-      <div>
-        <h2>Lee el capítulo 1 gratis</h2>
-        <p class="sub" style="margin-bottom:18px">Antes de comprar, mira cómo está escrito. Descarga la introducción y el capítulo 1 completos, sin dar tu correo.</p>
-        <a class="btn gratis" data-muestra href="capitulo-1-gratis.pdf" download>📥 Descargar el capítulo 1</a>
-      </div>
     </div>
   </div>
 </section>
@@ -280,6 +262,7 @@ fbq('track', 'ViewContent', { content_name: 'Libro quincena', value: 19900, curr
       <div class="precio"><b>$19.900</b><s>$29.900</s><small>Lanzamiento</small></div>
       <div class="acciones" style="justify-content:center"><a class="btn comprar" data-comprar href="https://checkout.wompi.co/l/47ppAK">Comprar el libro ahora</a></div>
       <p class="confianza" style="color:#fff">🔒 Pago seguro con Wompi · 📩 Descarga inmediata</p>
+      <p class="mini">¿Quieres mirar antes? <a data-muestra href="muestra-gratis.pdf" download>Lee unas páginas de muestra</a></p>
     </div>
   </div>
 </section>
@@ -305,7 +288,7 @@ document.querySelectorAll("[data-comprar]").forEach(a => {
   a.addEventListener("click", () => fbq("track", "InitiateCheckout", { value: 19900, currency: "COP", content_name: "Libro quincena" }));
 });
 document.querySelectorAll("[data-muestra]").forEach(a =>
-  a.addEventListener("click", () => fbq("track", "Lead", { content_name: "Capítulo 1 gratis" })));
+  a.addEventListener("click", () => fbq("track", "Lead", { content_name: "Muestra gratis" })));
 // La barra de compra aparece cuando la portada ya no se ve
 const barra = document.getElementById("barra");
 new IntersectionObserver(([e]) => barra.classList.toggle("ver", !e.isIntersecting)).observe(document.querySelector(".hero"));
