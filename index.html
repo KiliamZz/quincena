@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>¿Pa' dónde se fue la quincena? · El libro de finanzas para colombianos</title>
+<meta name="description" content="Cómo hacer que la plata te alcance, salir de deudas y empezar a ahorrar con lo que ganas hoy. Libro en PDF con cuentas hechas con el mínimo de 2026. Lee el capítulo 1 gratis.">
+<meta property="og:title" content="¿Pa' dónde se fue la quincena?">
+<meta property="og:description" content="El libro de finanzas sin enredos para colombianos. Lee el capítulo 1 gratis.">
+<meta property="og:image" content="https://kiliamzz.github.io/quincena/img/compartir.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFC93C">
+<link rel="icon" href="img/portada.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap">
+<style>
+  :root { --marino: #1B2559; --amarillo: #FFC93C; --amarillo-suave: #FFF4D6; --tinta: #1A1F36; --suave: #555B75; --linea: #E8E4D8; --fondo: #FBF8F1; --rojo: #D9480F; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Plus Jakarta Sans", system-ui, sans-serif; color: var(--tinta); background: var(--fondo); line-height: 1.55; font-size: 17px; padding-bottom: 84px; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { line-height: 1.12; letter-spacing: -0.02em; margin: 0; }
+  h2 { font-size: clamp(28px, 6vw, 40px); font-weight: 800; color: var(--marino); }
+  p { margin: 0; }
+  .muted { color: var(--suave); }
+
+  /* Botones */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 58px; padding: 0 30px; border-radius: 999px; font-weight: 800; font-size: 18px; text-decoration: none; cursor: pointer; border: 0; }
+  .btn.comprar { background: var(--marino); color: var(--amarillo); box-shadow: 0 6px 0 #0D1330; }
+  .btn.comprar:active { transform: translateY(3px); box-shadow: 0 3px 0 #0D1330; }
+  .btn.gratis { background: #fff; color: var(--marino); box-shadow: inset 0 0 0 2px var(--marino); }
+
+  /* Portada */
+  .hero { background: var(--amarillo); position: relative; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(135deg, rgba(27,37,89,.04) 0 24px, transparent 24px 48px); }
+  .hero .wrap { position: relative; display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center; padding-top: 34px; padding-bottom: 54px; }
+  .sello { display: inline-block; background: var(--marino); color: var(--amarillo); font-weight: 800; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; padding: 7px 14px; border-radius: 8px; }
+  .hero h1 { font-size: clamp(38px, 8.5vw, 62px); font-weight: 800; color: var(--marino); margin-top: 18px; }
+  .hero h1 span { background: #fff; padding: 0 12px; border-radius: 14px; box-shadow: 6px 6px 0 var(--marino); display: inline-block; transform: rotate(-1.5deg); margin-top: 6px; }
+  .hero .lead { font-size: 20px; font-weight: 600; color: var(--marino); margin-top: 22px; max-width: 30ch; }
+  .precio { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; margin-top: 22px; color: var(--marino); }
+  .precio b { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; }
+  .precio s { font-size: 20px; opacity: .6; font-weight: 700; }
+  .precio small { font-size: 14px; font-weight: 800; background: #fff; padding: 4px 10px; border-radius: 999px; }
+  .acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+  .confianza { margin-top: 14px; font-size: 14px; font-weight: 700; color: var(--marino); opacity: .85; }
+  .libro { width: min(340px, 80%); height: auto; margin: 0 auto; display: block; transform: perspective(1400px) rotateY(-16deg) rotate(2deg); border-radius: 6px 12px 12px 6px; box-shadow: 30px 36px 60px rgba(0,0,0,.28); }
+
+  section.bloque { padding: 64px 0; }
+  section.bloque.blanco { background: #fff; }
+  .centro { text-align: center; }
+  .sub { font-size: 19px; color: var(--suave); margin-top: 14px; max-width: 46ch; }
+  .centro .sub { margin-left: auto; margin-right: auto; }
+
+  /* Dolor */
+  .dolores { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin-top: 28px; }
+  .dolor { background: #fff; border-radius: 18px; padding: 18px 20px; font-weight: 600; box-shadow: 0 1px 0 var(--linea); }
+  .dolor::before { content: "😩 "; }
+  .dato { margin-top: 30px; background: var(--marino); color: #fff; border-radius: 22px; padding: 26px; display: flex; gap: 22px; align-items: center; }
+  .dato > b { font-size: 54px; color: var(--amarillo); line-height: 1; flex: none; }
+  .dato p b { color: var(--amarillo); }
+  .dato small { display: block; color: #AEB8DE; font-size: 13px; margin-top: 6px; }
+
+  /* Aprendes */
+  .lista { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 30px; }
+  .item { display: flex; gap: 14px; align-items: flex-start; background: var(--fondo); border-radius: 18px; padding: 18px; }
+  .item i { flex: none; font-style: normal; font-size: 28px; line-height: 1; }
+  .item b { display: block; color: var(--marino); }
+  .item span { font-size: 15px; color: var(--suave); }
+
+  /* Por dentro */
+  .galeria { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 24px 4px 18px; margin: 0 -20px; padding-left: 20px; }
+  .galeria figure { flex: none; width: min(78vw, 340px); margin: 0; scroll-snap-align: start; }
+  .galeria img { width: 100%; display: block; border-radius: 12px; background: #fff; box-shadow: 0 16px 36px rgba(27,37,89,.16); }
+  .galeria figcaption { font-size: 14px; font-weight: 700; color: var(--marino); margin-top: 10px; }
+  .desliza { font-size: 14px; font-weight: 700; color: var(--suave); }
+
+  /* Muestra gratis */
+  .muestra { background: var(--amarillo-suave); border: 3px dashed var(--amarillo); border-radius: 26px; padding: 30px; display: grid; grid-template-columns: auto 1fr; gap: 26px; align-items: center; }
+  .muestra img { width: 150px; border-radius: 6px 10px 10px 6px; box-shadow: 14px 18px 30px rgba(0,0,0,.2); transform: rotate(-4deg); }
+  .muestra h2 { font-size: clamp(26px, 5vw, 34px); }
+
+  /* Para quién */
+  .dos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+  .caja { border-radius: 20px; padding: 24px; }
+  .caja.si { background: #EAF6EE; } .caja.no { background: #FDEDEA; }
+  .caja h3 { font-size: 20px; margin-bottom: 12px; }
+  .caja ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+
+  /* Contenido */
+  .indice { margin-top: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 26px; counter-reset: cap; }
+  .indice div { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--linea); font-weight: 600; }
+  .indice div::before { counter-increment: cap; content: counter(cap); flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--marino); color: var(--amarillo); display: grid; place-items: center; font-size: 14px; font-weight: 800; }
+  .indice div.bonus::before { content: "★"; background: var(--amarillo); color: var(--marino); }
+
+  /* Preguntas */
+  .faq { margin-top: 26px; display: flex; flex-direction: column; gap: 12px; }
+  .faq details { background: #fff; border-radius: 16px; padding: 18px 20px; box-shadow: 0 1px 0 var(--linea); }
+  .faq summary { font-weight: 800; cursor: pointer; color: var(--marino); }
+  .faq p { margin-top: 10px; color: var(--suave); }
+
+  /* Cierre */
+  .final { background: var(--marino); color: #fff; border-radius: 28px; padding: 40px 26px; text-align: center; }
+  .final h2 { color: #fff; }
+  .final .precio { justify-content: center; color: #fff; }
+  .final .precio small { color: var(--marino); }
+  .final .btn.comprar { background: var(--amarillo); color: var(--marino); box-shadow: 0 6px 0 #B98A10; }
+  footer { padding: 34px 0 20px; font-size: 14px; color: var(--suave); text-align: center; }
+
+  /* Barra fija de compra en el celular */
+  .barra { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-top: 1px solid var(--linea); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 12px; transform: translateY(110%); transition: transform .25s; }
+  .barra.ver { transform: none; }
+  .barra .t { flex: 1; font-size: 14px; line-height: 1.25; font-weight: 700; color: var(--marino); }
+  .barra .t b { font-size: 20px; display: block; }
+  .barra .btn { min-height: 50px; padding: 0 22px; font-size: 16px; }
+
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 22px; padding-top: 22px; padding-bottom: 40px; }
+    .hero .visual { order: -1; }
+    .libro { width: 46%; }
+    .acciones .btn { flex: 1 1 100%; }
+    .dolores, .lista, .dos, .indice { grid-template-columns: 1fr; }
+    .muestra { grid-template-columns: 1fr; text-align: center; }
+    .muestra img { margin: 0 auto; }
+    .dato { flex-direction: column; text-align: center; }
+    section.bloque { padding: 48px 0; }
+  }
+</style>
+<!-- Píxel de Meta: mide visitas, interés en comprar y descargas de la muestra -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;
+s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '829881254032937');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', { content_name: 'Libro quincena', value: 19900, currency: 'COP' });
+</script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="sello">Finanzas sin enredos</span>
+      <h1>¿Pa' dónde se fue<br><span>la quincena?</span></h1>
+      <p class="lead">Cómo hacer que la plata te alcance, salir de deudas y empezar a ahorrar <b>con lo que ganas hoy.</b></p>
+      <div class="precio"><b>$19.900</b><s>$29.900</s><small>Precio de lanzamiento</small></div>
+      <div class="acciones">
+        <a class="btn comprar" data-comprar href="https://checkout.wompi.co/l/47ppAK">Comprar el libro</a>
+        <a class="btn gratis" href="#gratis">Leer el capítulo 1 gratis</a>
+      </div>
+      <p class="confianza">🔒 Pago seguro con Wompi · 📩 Te llega al instante y a tu correo · 📱 PDF para leer en el celular</p>
+    </div>
+    <div class="visual"><img class="libro" src="img/portada.jpg" alt="Portada del libro ¿Pa' dónde se fue la quincena?" width="900" height="1440"></div>
+  </div>
+</header>
+
+<section class="bloque">
+  <div class="wrap">
+    <h2>¿Te suena alguna de estas?</h2>
+    <div class="dolores">
+      <div class="dolor">Te llega la quincena el viernes y el martes ya estás haciendo cuentas para el bus.</div>
+      <div class="dolor">Pagas la tarjeta juiciosamente cada mes… y la deuda no baja.</div>
+      <div class="dolor">Juraste que este año sí ibas a ahorrar. Era enero. Ya no es enero.</div>
+      <div class="dolor">Trabajas por tu cuenta: un mes te va bien y al otro no sabes cómo pagar el arriendo.</div>
+    </div>
+    <div class="dato"><b>27 %</b><p>No es que seas malo para la plata: los hogares colombianos se gastan <b>27 de cada 100 pesos</b> solo en pagar créditos, y casi nadie nos enseñó a manejarla. Este libro es eso que nos faltó.<small>Fuente: Banco de la República, 2026</small></p></div>
+  </div>
+</section>
+
+<section class="bloque blanco">
+  <div class="wrap">
+    <h2>Lo que vas a aprender</h2>
+    <p class="sub">Explicado como te lo explicaría un amigo que sabe de plata: claro, con humor y con cuentas hechas con el salario mínimo de 2026.</p>
+    <div class="lista">
+      <div class="item"><i>🔍</i><div><b>Saber a dónde se va tu plata</b><span>El ejercicio de 30 días que te muestra el "hueco" que no conocías.</span></div></div>
+      <div class="item"><i>📝</i><div><b>Un presupuesto de una sola hoja</b><span>El método de las 4 bolsas, hecho para quien gana el mínimo.</span></div></div>
+      <div class="item"><i>⛓️</i><div><b>Salir de deudas con un plan</b><span>Bola de nieve o avalancha, abonos a capital y cómo negociar con el banco.</span></div></div>
+      <div class="item"><i>🛟</i><div><b>Armar tu colchón de emergencias</b><span>Para que la próxima emergencia no te mande al gota a gota.</span></div></div>
+      <div class="item"><i>🛵</i><div><b>Finanzas para independientes</b><span>Cómo pagarte un sueldo fijo aunque ganes variable.</span></div></div>
+      <div class="item"><i>💰</i><div><b>Qué hacer con la prima y las cesantías</b><span>La regla para que la plata extra no se vuele.</span></div></div>
+      <div class="item"><i>🚫</i><div><b>No caer en trampas</b><span>Gota a gota, pirámides, préstamos por app y el primo que "te lo paga el viernes".</span></div></div>
+      <div class="item"><i>🌱</i><div><b>Poner a crecer tu plata</b><span>CDT, fondos y el interés compuesto, sin que te tumben.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque">
+  <div class="wrap">
+    <h2>Míralo por dentro</h2>
+    <p class="desliza">Desliza para ver más páginas →</p>
+    <div class="galeria">
+      <figure><img src="img/pag-indice.jpg" alt="Índice del libro" loading="lazy"><figcaption>13 capítulos cortos y 2 bonus</figcaption></figure>
+      <figure><img src="img/pag-tele.jpg" alt="Ejemplo del televisor a 36 cuotas" loading="lazy"><figcaption>Cuentas claras con plata de verdad</figcaption></figure>
+      <figure><img src="img/pag-tinto.jpg" alt="Ejemplo del tinto que vale casi un millón" loading="lazy"><figcaption>El tinto que te cuesta $792.000 al año</figcaption></figure>
+      <figure><img src="img/pag-cajas.jpg" alt="Cajas de colores del libro" loading="lazy"><figcaption>Cajas para ir directo al grano</figcaption></figure>
+      <figure><img src="img/pag-plantilla.jpg" alt="Plantilla de presupuesto" loading="lazy"><figcaption>Plantillas para llenar</figcaption></figure>
+      <figure><img src="img/pag-plan.jpg" alt="Plan de 30 días" loading="lazy"><figcaption>Un plan de 30 días</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="bloque blanco" id="gratis">
+  <div class="wrap">
+    <div class="muestra">
+      <img src="img/portada.jpg" alt="" loading="lazy">
+      <div>
+        <h2>Lee el capítulo 1 gratis</h2>
+        <p class="sub" style="margin-bottom:18px">Antes de comprar, mira cómo está escrito. Descarga la introducción y el capítulo 1 completos, sin dar tu correo.</p>
+        <a class="btn gratis" data-muestra href="capitulo-1-gratis.pdf" download>📥 Descargar el capítulo 1</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque">
+  <div class="wrap">
+    <h2>¿Es para ti?</h2>
+    <div class="dos">
+      <div class="caja si"><h3>✅ Sí, si…</h3><ul>
+        <li>Ganas entre 1 y 3 salarios mínimos y sientes que la plata no te alcanza.</li>
+        <li>Tienes una o varias deudas y quieres un plan para salir.</li>
+        <li>Trabajas por tu cuenta o vives del rebusque.</li>
+        <li>Te llegó tu primer sueldo y quieres empezar bien.</li>
+        <li>Quieres enseñarles a tus hijos a manejar la plata.</li></ul></div>
+      <div class="caja no"><h3>❌ No, si…</h3><ul>
+        <li>Buscas hacerte rico en 30 días.</li>
+        <li>Quieres invertir en cripto o hacer trading.</li>
+        <li>Ya tienes tus finanzas en orden y un portafolio armado.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque blanco">
+  <div class="wrap">
+    <h2>Lo que trae el libro</h2>
+    <p class="sub">108 páginas en PDF. Se lee en un fin de semana: cada capítulo toma unos 10 minutos.</p>
+    <div class="indice">
+      <div>La plata no se vuela sola: el diagnóstico</div>
+      <div>El presupuesto de una sola hoja</div>
+      <div>Para los que viven del rebusque</div>
+      <div>El colchón para cuando la vida se ponga brava</div>
+      <div>Deudas: cuánto te cuesta lo que debes</div>
+      <div>Deudas: el plan para salir</div>
+      <div>Las trampas: gota a gota, pirámides y el primo</div>
+      <div>Prima, cesantías y platica extra</div>
+      <div>Ahorrar cuando sientes que no sobra nada</div>
+      <div>Poner a crecer la plata (sin que te tumben)</div>
+      <div>Casa, carro y moto, con cabeza fría</div>
+      <div>Plata y familia: pareja, papás e hijos</div>
+      <div>Pensión, seguros e impuestos</div>
+      <div class="bonus">Bonus: 50 maneras de ahorrar en Colombia</div>
+      <div class="bonus">Bonus: guiones listos para llamar al banco</div>
+      <div class="bonus">Plantillas para llenar y plan de 30 días</div>
+    </div>
+  </div>
+</section>
+
+<section class="bloque">
+  <div class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details><summary>¿Cómo recibo el libro?</summary><p>Apenas se aprueba tu pago, Wompi te lleva a la descarga del PDF. Además te llega al correo que pongas al pagar, con el libro adjunto y un botón de descarga.</p></details>
+      <details><summary>¿Cómo puedo pagar?</summary><p>Con tarjeta débito o crédito, PSE, Nequi o Bancolombia, a través de Wompi, la pasarela de pagos de Bancolombia. Nosotros nunca vemos los datos de tu tarjeta.</p></details>
+      <details><summary>¿Es un libro físico?</summary><p>No, es un libro digital en PDF. Lo puedes leer en el celular, el computador o la tablet, y también imprimir las plantillas.</p></details>
+      <details><summary>¿Sirve si gano el salario mínimo?</summary><p>Sí. Justamente todos los ejemplos están hechos con el salario mínimo de 2026, la prima, las cesantías y gastos reales de una familia colombiana.</p></details>
+      <details><summary>¿Y si trabajo por mi cuenta?</summary><p>Hay un capítulo entero para independientes: cómo separar la plata del negocio, pagarte un sueldo fijo y armar el colchón de los meses malos.</p></details>
+      <details><summary>¿Qué pasa si no me llega o no abre?</summary><p>Escríbenos por <a href="https://wa.me/573202809257?text=Hola%2C%20compr%C3%A9%20el%20libro%20de%20la%20quincena%20y%20necesito%20ayuda" target="_blank" rel="noopener">WhatsApp</a> con tu comprobante de pago y te lo enviamos de nuevo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="bloque blanco">
+  <div class="wrap">
+    <div class="final">
+      <h2>Que la próxima quincena sí te alcance</h2>
+      <p class="sub" style="color:#D4DBF5">Cuesta menos que un almuerzo y un domicilio.</p>
+      <div class="precio"><b>$19.900</b><s>$29.900</s><small>Lanzamiento</small></div>
+      <div class="acciones" style="justify-content:center"><a class="btn comprar" data-comprar href="https://checkout.wompi.co/l/47ppAK">Comprar el libro ahora</a></div>
+      <p class="confianza" style="color:#fff">🔒 Pago seguro con Wompi · 📩 Descarga inmediata</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 · ¿Pa' dónde se fue la quincena? · Martín Plata</p>
+  <p style="margin-top:6px"><a href="privacidad.html">Política de privacidad</a> · Este libro es educativo y no reemplaza la asesoría de un profesional.</p>
+</footer>
+
+<div class="barra" id="barra">
+  <div class="t">¿Pa' dónde se fue la quincena?<b>$19.900</b></div>
+  <a class="btn comprar" data-comprar href="https://checkout.wompi.co/l/47ppAK">Comprar</a>
+</div>
+
+<script>
+// Los anuncios traen ?utm_...: se pasan al link de pago para saber de dónde viene cada venta
+const utm = new URLSearchParams(location.search);
+document.querySelectorAll("[data-comprar]").forEach(a => {
+  const url = new URL(a.href);
+  utm.forEach((v, k) => { if (k.startsWith("utm_")) url.searchParams.set(k, v); });
+  if (!url.searchParams.has("utm_source")) url.searchParams.set("utm_source", "pagina");
+  a.href = url.toString();
+  a.addEventListener("click", () => fbq("track", "InitiateCheckout", { value: 19900, currency: "COP", content_name: "Libro quincena" }));
+});
+document.querySelectorAll("[data-muestra]").forEach(a =>
+  a.addEventListener("click", () => fbq("track", "Lead", { content_name: "Capítulo 1 gratis" })));
+// La barra de compra aparece cuando la portada ya no se ve
+const barra = document.getElementById("barra");
+new IntersectionObserver(([e]) => barra.classList.toggle("ver", !e.isIntersecting)).observe(document.querySelector(".hero"));
+</script>
+</body>
+</html>
